@@ -19,4 +19,11 @@ def lines_printed_random(lines_list):
     for line in lines_list:
         print(choice(lines_list))
 
- 
+ for line in open('poem.txt'):
+    
+    if line.startswith('I') or line.startswith('You'): 
+       print(line)
+
+poem_lines = get_file_lines('poem.txt')
+lines_printed_backwards(poem_lines)
+
